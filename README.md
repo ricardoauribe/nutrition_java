@@ -15,3 +15,17 @@ This project will work with the following modules of Spring:
 - Spring Security
 
 It's intended to create a REST API to be consumend by a separate web front end project
+
+## How to run
+
+To build execute:
+
+```
+mvn clean build
+```
+
+To run:
+
+```
+mvn
+```
