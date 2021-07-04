@@ -27,5 +27,5 @@ mvn clean build
 To run:
 
 ```
-mvn
+mvn spring-boot:run
 ```
