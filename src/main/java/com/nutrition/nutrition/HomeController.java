@@ -22,7 +22,9 @@ public class HomeController {
   @GetMapping("/patient")
   public Map<String, String> patient(){
     HashMap<String, String> map = new HashMap<>();
-    map.put("name", "myName");
+    Patient myPatient = new Patient(1, "Ricardo");
+
+    map.put("name", myPatient.getName());
     map.put("age", "myAge");
     map.put("weight", "70");
     return map;
