@@ -18,4 +18,13 @@ public class HomeController {
     map.put("aa", "bb");
     return map;
   }
+
+  @GetMapping("/patient")
+  public Map<String, String> patient(){
+    HashMap<String, String> map = new HashMap<>();
+    map.put("name", "myName");
+    map.put("age", "myAge");
+    map.put("weight", "70");
+    return map;
+  }
 }
