@@ -32,6 +32,6 @@ mvn spring-boot:run
 
 ## Testing
 
-TODO: Add junit for unit testing
-TODO: Add commando to run tests
-TODO: Configure coverage xml file
+- TODO: Add junit for unit testing
+- TODO: Add commando to run tests
+- TODO: Configure coverage xml file
