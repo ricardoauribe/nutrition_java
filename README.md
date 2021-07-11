@@ -29,3 +29,9 @@ To run:
 ```
 mvn spring-boot:run
 ```
+
+## Testing
+
+TODO: Add junit for unit testing
+TODO: Add commando to run tests
+TODO: Configure coverage xml file
