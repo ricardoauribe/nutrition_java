@@ -7,6 +7,8 @@ import com.nutrition.nutrition.model.Patient;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -21,7 +23,7 @@ public class HomeController {
     return map;
   }
 
-  @GetMapping("/patient")
+  @RequestMapping(value = "/patient", method = RequestMethod.GET)
   public Map<String, String> patient(){
     HashMap<String, String> map = new HashMap<>();
     Patient myPatient = new Patient(1, "Ricardo");
