@@ -1,4 +1,4 @@
-package com.nutrition.nutrition;
+package com.nutrition.nutrition.model;
 
 public class Patient {
 

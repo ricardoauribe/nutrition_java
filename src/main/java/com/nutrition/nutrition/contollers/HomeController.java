@@ -1,7 +1,9 @@
-package com.nutrition.nutrition;
+package com.nutrition.nutrition.contollers;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import com.nutrition.nutrition.model.Patient;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +25,7 @@ public class HomeController {
   public Map<String, String> patient(){
     HashMap<String, String> map = new HashMap<>();
     Patient myPatient = new Patient(1, "Ricardo");
+    
 
     map.put("name", myPatient.getName());
     map.put("age", "myAge");
