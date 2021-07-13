@@ -15,12 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class HomeController {
   @GetMapping("/")
-  public Map<String, String> home(){
-    HashMap<String, String> map = new HashMap<>();
-    map.put("key", "value");
-    map.put("foo", "bar");
-    map.put("aa", "bb");
-    return map;
+  public String home(){
+    return "Hello Controller";
   }
 
   @RequestMapping(value = "/patient", method = RequestMethod.GET)
