@@ -32,7 +32,7 @@ mvn spring-boot:run
 
 ## Testing
 
-Testing is configured with Junit 5 
+Testing is configured with Junit 5 and Mockito
 
 To run the test suite execute:
 
@@ -40,3 +40,7 @@ To run the test suite execute:
 mvn test
 ```
 - TODO: Configure coverage xml file
+
+## Logging
+
+TODO: Configure Logging using log4j or a similar library
