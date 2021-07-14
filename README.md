@@ -32,6 +32,11 @@ mvn spring-boot:run
 
 ## Testing
 
-- TODO: Add junit for unit testing
-- TODO: Add commando to run tests
+Testing is configured with Junit 5 
+
+To run the test suite execute:
+
+```
+mvn test
+```
 - TODO: Configure coverage xml file
