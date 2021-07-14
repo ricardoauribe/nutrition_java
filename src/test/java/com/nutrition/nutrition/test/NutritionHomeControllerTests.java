@@ -30,6 +30,7 @@ public class NutritionHomeControllerTests extends NutritionApplicationTests {
 
   }
 
+//TODO: use json assert to review test case content
 /*
   @Test
   public void testPatient2() throws Exception {
