@@ -40,7 +40,10 @@ To run the test suite execute:
 mvn test
 ```
 - TODO: Configure coverage xml file
+- TODO: Explain how it was configured
 
 ## Logging
 
-TODO: Configure Logging using log4j or a similar library
+Log was configured using Log4j library, current configured appender logs events to the application console
+
+- TODO: Explain how it was configured
