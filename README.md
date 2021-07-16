@@ -47,3 +47,7 @@ mvn test
 Log was configured using Log4j library, current configured appender logs events to the application console
 
 - TODO: Explain how it was configured
+
+## API
+
+- TODO: Swagger configuration and link
