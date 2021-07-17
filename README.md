@@ -50,4 +50,12 @@ Log was configured using Log4j library, current configured appender logs events 
 
 ## API
 
-- TODO: Swagger configuration and link
+Swagger dependency is added through the pom file as
+
+```
+<dependency>
+  <groupId>io.springfox</groupId>
+  <artifactId>springfox-boot-starter</artifactId>
+  <version>3.0.0</version>
+</dependency>
+```
