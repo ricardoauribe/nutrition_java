@@ -14,12 +14,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.annotations.ApiOperation;
+import springfox.documentation.annotations.ApiIgnore;
+
 @RestController
 @CrossOrigin
 public class HomeController {
 
   Logger logger = LogManager.getLogger(getClass());
 
+  @ApiIgnore
+  @ApiOperation(value = "This method is used to get the author name.")
   @GetMapping("/")
   public String home(){
     
@@ -31,6 +36,7 @@ public class HomeController {
 
   }
 
+  @ApiOperation(value = "This method is used to get the current date.", hidden = true)
   @RequestMapping(value = "/patient", method = RequestMethod.GET)
   public Map<String, String> patient(){
     HashMap<String, String> map = new HashMap<>();

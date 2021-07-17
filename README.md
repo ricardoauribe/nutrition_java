@@ -53,9 +53,17 @@ Log was configured using Log4j library, current configured appender logs events 
 Swagger dependency is added through the pom file as
 
 ```
-<dependency>
-  <groupId>io.springfox</groupId>
-  <artifactId>springfox-boot-starter</artifactId>
-  <version>3.0.0</version>
-</dependency>
+  <!-- Spring Fox for Swagger 2 -->
+  <dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-boot-starter</artifactId>
+    <version>3.0.0</version>
+  </dependency>
+
+  <!-- Swagger UI -->
+  <dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.9.2</version>
+  </dependency>
 ```
