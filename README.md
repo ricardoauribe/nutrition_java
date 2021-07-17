@@ -59,11 +59,9 @@ Swagger dependency is added through the pom file as
     <artifactId>springfox-boot-starter</artifactId>
     <version>3.0.0</version>
   </dependency>
-
-  <!-- Swagger UI -->
-  <dependency>
-    <groupId>io.springfox</groupId>
-    <artifactId>springfox-swagger-ui</artifactId>
-    <version>2.9.2</version>
-  </dependency>
 ```
+Since the project is using Spring >= 2.2, it can use Springfox 3.0 which only requires one dependency
+
+The full API can be reviewed at:
+
+http://localhost:8085/swagger-ui/index.html
