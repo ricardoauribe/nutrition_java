@@ -34,7 +34,7 @@ public class HomeController {
     return "Hello Controller";
   }
 
-  @ApiOperation(value = "This method is used to get the current date.")
+  @ApiOperation(value = "This method is used to get a patient.")
   @RequestMapping(value = "/patient", method = RequestMethod.GET)
   public Map<String, String> patient(){
     HashMap<String, String> map = new HashMap<>();
