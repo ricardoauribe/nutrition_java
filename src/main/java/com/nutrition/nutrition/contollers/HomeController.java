@@ -32,11 +32,9 @@ public class HomeController {
       "It will be hidden.");
     
     return "Hello Controller";
-
-
   }
 
-  @ApiOperation(value = "This method is used to get the current date.", hidden = true)
+  @ApiOperation(value = "This method is used to get the current date.")
   @RequestMapping(value = "/patient", method = RequestMethod.GET)
   public Map<String, String> patient(){
     HashMap<String, String> map = new HashMap<>();
