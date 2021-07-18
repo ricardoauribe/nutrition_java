@@ -34,6 +34,26 @@ mvn spring-boot:run
 
 Testing is configured with Junit 5 and Mockito
 
+To configure it, include he following dependencies at the pom.xml file
+
+```
+  <!-- junit 5 -->
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>${junit-jupiter.version}</version>
+    <scope>test</scope>
+  </dependency>
+
+  <!-- Mockito -->
+  <dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-junit-jupiter</artifactId>
+    <version>3.2.4</version>
+    <scope>test</scope>
+  </dependency>
+```
+
 To run the test suite execute:
 
 ```
