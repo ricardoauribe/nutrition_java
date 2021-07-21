@@ -85,3 +85,7 @@ Since the project is using Spring >= 2.2, it can use Springfox 3.0 which only re
 The full API can be reviewed at:
 
 http://localhost:8085/swagger-ui/index.html
+
+## GitHub Actions
+
+TODO: Describe templates and actions
