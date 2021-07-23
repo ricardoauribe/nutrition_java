@@ -89,3 +89,5 @@ http://localhost:8085/swagger-ui/index.html
 ## GitHub Actions
 
 TODO: Describe templates and actions
+
+## How to Contribute
