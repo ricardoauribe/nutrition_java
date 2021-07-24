@@ -93,3 +93,5 @@ TODO: Describe templates and actions
 ## How to Contribute
 
 ## Docker
+
+- TODO: Create a docker container and add propper instructions
