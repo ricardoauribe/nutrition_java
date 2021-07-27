@@ -86,9 +86,13 @@ The full API can be reviewed at:
 
 http://localhost:8085/swagger-ui/index.html
 
-## GitHub Actions
+## GitHub Actions & Templates
 
-TODO: Describe templates and actions
+This project uses a template for Pull Requests. It got defined at the settings menu, additionally the template got stored at the .github folder
+
+TODO: Define github actions to:
+ - Zip the contents
+ - Push the image so S3 at aws
 
 ## How to Contribute
 
