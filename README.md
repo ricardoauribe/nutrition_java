@@ -98,4 +98,9 @@ TODO: Define github actions to:
 
 ## Docker
 
-- TODO: Create a docker container and add propper instructions
+```
+docker build --tag java-docker .
+docker run -d -p 8080:8080 java-docker
+```
+
+TODO: Add action to build the image and push it as a package
