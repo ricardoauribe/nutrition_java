@@ -10,4 +10,25 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-      - run: docker build --tag java-docker .
+      #- run: docker build --tag java-docker .
+  
+  Build-and-Push-Docker-Image:
+    runs-on: ubuntu-latest
+    name: Docker Build, Tag, Push
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Download built artifact
+      uses: actions/download-artifact@main
+      with:
+        name: webpack artifacts
+        path: public
+    - name: Build container image
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{github.actor}}
+        password: ${{secrets.GITHUB_TOKEN}}
+        registry: docker.pkg.github.com
+        repository: ricardoauribe/github-actions-for-packages/nutrition_java
+        tag_with_sha: true
