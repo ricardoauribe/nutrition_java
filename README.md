@@ -90,9 +90,10 @@ http://localhost:8085/swagger-ui/index.html
 
 This project uses a template for Pull Requests. It got defined at the settings menu, additionally the template got stored at the .github folder
 
-TODO: Define github actions to:
- - Zip the contents
- - Push the image so S3 at aws
+Additionally a workflow was defined to take the Dockerfile at the root directory build an image and push into Github Packages. 
+This workflow can be find at /.github/workflows
+
+Further actions may include pushing this image into an ECR instance or into an artifact at AWS like ECS or Elastic Beanstalk
 
 ## How to Contribute
 
