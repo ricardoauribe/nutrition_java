@@ -1,0 +1,2 @@
+name: zip-github-actions
+on: [workflow_dispatch]
