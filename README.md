@@ -2,7 +2,7 @@
 
 ## Setup
 
-This project uses spring boot as a frame work
+This project uses spring boot 2.6 as a framework
 
 Please ensure to have Java 11+ installed and Maven configured at your local machine
 
@@ -12,7 +12,7 @@ This project will work with the following modules of Spring:
 
 - Spring Web
 - JPA
-- Spring Security
+- Spring Security (not enabled yet)
 
 It's intended to create a REST API to be consumend by a separate web front end project
 
@@ -64,9 +64,25 @@ mvn test
 
 ## Logging
 
-Log was configured using Log4j library, current configured appender logs events to the application console
+Logging was configured using Log4j library, current configured appender logs events to the application console
 
-- TODO: Explain how it was configured
+Below you can find dependencies added at the pom.xml file
+
+```
+  <!-- Log4j -->
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.7</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.7</version>
+    <type>test-jar</type>
+    <scope>test</scope>
+  </dependency>
+```
 
 ## API
 
@@ -99,9 +115,11 @@ Further actions may include pushing this image into an ECR instance or into an a
 
 ## Docker
 
+You can use the following commands to run the project locally. 
+
 ```
 docker build --tag java-docker .
 docker run -d -p 8080:8080 java-docker
 ```
 
-TODO: Add action to build the image and push it as a package
+Additionally there is a github action that will use the same Dockerfile to build an image and push it into github packages
