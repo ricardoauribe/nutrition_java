@@ -1,2 +1,8 @@
 name: zip-github-actions
 on: [workflow_dispatch]
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: java -v
