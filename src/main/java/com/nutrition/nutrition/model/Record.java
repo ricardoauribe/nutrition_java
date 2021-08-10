@@ -1,15 +1,15 @@
 package com.nutrition.nutrition.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Record {
   private long id;
   private Date recordDate;
   private Patient patient;
 
-  public Record(long id, Date recordDate, Patient patient){
+  public Record(long id, Date todayDate, Patient patient){
     this.id = id;
-    this.recordDate = recordDate;
+    this.recordDate = todayDate;
     this.patient = patient;
   }
 
