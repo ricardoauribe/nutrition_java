@@ -11,10 +11,12 @@ Please ensure to have Java 11+ installed and Maven configured at your local mach
 
 ## Overview
 
-This project will work with the following modules of Spring:
+This projects intends to provide a backend REST API to interact with a DB focus on nutrition patients and the records they generate through the different appointments they  have as a follow up with a nutritionist
+
+The project works with the following Spring modules:
 
 - Spring Web
-- JPA
+- JPA (not enabled yet)
 - Spring Security (not enabled yet)
 
 It's intended to create a REST API to be consumend by a separate web front end project
