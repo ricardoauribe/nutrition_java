@@ -6,6 +6,9 @@ This project uses spring boot 2.6 as a framework
 
 Please ensure to have Java 11+ installed and Maven configured at your local machine
 
+- https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html
+- https://maven.apache.org/
+
 ## Overview
 
 This project will work with the following modules of Spring:
